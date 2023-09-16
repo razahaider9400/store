@@ -40,7 +40,11 @@ const Home = () => {
           return (
             <button
               key={c}
-              className="btn btn-danger mx-auto "
+              className={
+                selectedCategory === categories.id
+                  ? "btn bg-danger mx-2"
+                  : "btn bg-dark mx-2"
+              }
               onClick={() => changeCategory(c)}
             >
               {c}
