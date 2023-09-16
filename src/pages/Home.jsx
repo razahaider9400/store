@@ -34,7 +34,7 @@ const Home = () => {
     <>
       <div
         className=" mt-5"
-        style={{ overflowX: "auto" }}
+        style={{ overflowX: "auto",whiteSpace:'nowrap'}}
       >
         {categories.map((c) => {
           return (
