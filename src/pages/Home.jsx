@@ -34,13 +34,13 @@ const Home = () => {
     <>
       <div
         className="d-flex justify-content-center gap-3 align-items-center mt-5"
-        style={{ overflowX: "auto", whiteSpace: "nowrap" }}
+        style={{ overflowX: "auto" }}
       >
         {categories.map((c) => {
           return (
             <button
               key={c}
-              className="btn btn-danger"
+              className="btn btn-danger mx-auto "
               onClick={() => changeCategory(c)}
             >
               {c}
