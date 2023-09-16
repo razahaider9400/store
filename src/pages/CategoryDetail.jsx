@@ -2,9 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { useParams } from "react-router-dom";
 
-
-
-const CategoryDetail = ({updateCart}) => {
+const CategoryDetail = ({ updateCart }) => {
   const { id } = useParams();
   const [product, setProduct] = useState([]);
   const [qty, setQty] = useState(1);
@@ -55,7 +53,12 @@ const CategoryDetail = ({updateCart}) => {
             </button>
           </div>
           <div>
-            <button className="btn btn-primary mt-5" onClick={() => updateCart(product, qty)}>Add to Cart</button>
+            <button
+              className="btn btn-primary mt-5"
+              onClick={() => updateCart(product, qty, false, true)}
+            >
+              Add to Cart
+            </button>
           </div>
         </div>
       </div>
