@@ -41,7 +41,7 @@ const Home = () => {
             <button
               key={c}
               className={
-                selectedCategory === categories.id
+                selectedCategory === categories
                   ? "btn bg-white text-black"
                   : "btn bg-dark text-white"
               }
