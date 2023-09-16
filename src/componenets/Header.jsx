@@ -8,12 +8,12 @@ const Header = ({ cart, updateCart, placeOrder }) => {
           <a className="navbar-brand" href="#">
             E-commerce
           </a>
-          <div className="fw-bold fs-5">
-            <i
-              className="bi bi-cart"
-              data-bs-toggle="offcanvas"
-              data-bs-target="#offcanvasRight"
-            ></i>
+          <div
+            className="fw-bold fs-5"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasRight"
+          >
+            <i className="bi bi-cart"></i>
             <span>{cart.length}</span>
           </div>
           <button
@@ -92,7 +92,7 @@ const Header = ({ cart, updateCart, placeOrder }) => {
           {cart.length > 0 ? (
             <>
               <h5 className="text-center mt-5 mb-2">
-                Total ={" "}
+                Total = $ 
                 {cart.reduce((total, item) => total + item.price * item.qty, 0)}
               </h5>
               <div className="text-center mt-3">
