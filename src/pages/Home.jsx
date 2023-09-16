@@ -33,7 +33,7 @@ const Home = () => {
   return (
     <>
       <div
-        className="d-flex justify-content-center gap-3 align-items-center mt-5"
+        className=" mt-5"
         style={{ overflowX: "auto" }}
       >
         {categories.map((c) => {
@@ -42,8 +42,8 @@ const Home = () => {
               key={c}
               className={
                 selectedCategory === c
-                  ? "btn bg-danger text-white"
-                  : "btn bg-dark text-white "
+                  ? "btn bg-danger text-white mx-2"
+                  : "btn bg-dark text-white mx-2"
               }
               onClick={() => changeCategory(c)}
             >
