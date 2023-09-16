@@ -32,7 +32,7 @@ const Home = () => {
 
   return (
     <>
-      <div className="d-flex justify-content-center gap-3 align-items-center mt-5">
+      <div className="d-flex justify-content-center gap-3 align-items-center mt-5" style={{overflowX:'auto' }}>
         {categories.map((c) => {
           return (
             <button
