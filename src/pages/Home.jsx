@@ -42,8 +42,8 @@ const Home = () => {
               key={c}
               className={
                 selectedCategory === categories.id
-                  ? "btn bg-danger mx-2"
-                  : "btn bg-dark mx-2"
+                  ? "btn bg-danger text-white"
+                  : "btn bg-dark text-white"
               }
               onClick={() => changeCategory(c)}
             >
