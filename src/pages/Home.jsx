@@ -32,7 +32,10 @@ const Home = () => {
 
   return (
     <>
-      <div className="d-flex justify-content-center gap-3 align-items-center mt-5" style={{overflowX:'auto' }}>
+      <div
+        className="d-flex justify-content-center gap-3 align-items-center mt-5"
+        style={{ overflowX: "auto", whiteSpace: "nowrap" }}
+      >
         {categories.map((c) => {
           return (
             <button
@@ -48,7 +51,11 @@ const Home = () => {
       <div className="row row-cols-1 row-cols-md-3 g-5 mt-5">
         {products.map((p) => {
           return (
-            <Link key={p.id} to={`/category-detail/${p.id}`} style={{textDecoration: 'none',color:'#000'}}>
+            <Link
+              key={p.id}
+              to={`/category-detail/${p.id}`}
+              style={{ textDecoration: "none", color: "#000" }}
+            >
               <div className="col">
                 <div className="card">
                   <img
