@@ -33,7 +33,7 @@ const Home = () => {
   return (
     <>
       <div
-        className="mx-auto mt-5"
+        className="text-center mt-5"
         style={{ overflowX: "auto",whiteSpace:'nowrap'}}
       >
         {categories.map((c) => {
